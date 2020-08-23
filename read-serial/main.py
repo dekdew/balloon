@@ -7,6 +7,13 @@ import json
 SERIAL_DEVICE = 'YOUR-PORT'  # change to receiver connected port
 BAUDRATE = 115200
 
+# DB config
+USER = 'YOUR-DB-USER'
+PASSWORD = 'YOUR-DB-PASSWORD'
+HOST = 'YOUR-DB-HOST'
+PORT = 'YOUR-DB-PORT'
+DATABASE = 'YOUR-DB-DATABASE'
+
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -21,11 +28,11 @@ class bcolors:
 TABLE = 'geo'
 
 try:
-    connection = psycopg2.connect(user="postgres",
-                                  password="AginixNaja123!",
-                                  host="161.246.38.104",
-                                  port="5436",
-                                  database="balloon")
+    connection = psycopg2.connect(user=USER,
+                                  password=PASSWORD,
+                                  host=HOST,
+                                  port=PORT,
+                                  database=DATABASE)
 
     cursor = connection.cursor()
     print("Connected to PostgreSQL")
