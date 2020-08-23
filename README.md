@@ -28,6 +28,7 @@ py -3 main.py
 # Hardware
 
 ## [Sender (GPS)](https://github.com/dekdew/balloon/tree/master/sender-gps)
+![enter image description here](https://raw.githubusercontent.com/dekdew/balloon/master/assets/sernder-gps.png)
 
 ## [Sender (Sensor)](https://github.com/dekdew/balloon/tree/master/sender-sensor)
 ![enter image description here](https://raw.githubusercontent.com/dekdew/balloon/master/assets/sernder-sensor.png)
