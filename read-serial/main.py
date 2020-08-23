@@ -3,6 +3,10 @@ import psycopg2
 from datetime import datetime
 import json
 
+# set device port and baudrate
+SERIAL_DEVICE = 'YOUR-PORT'  # change to receiver connected port
+BAUDRATE = 115200
+
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -12,10 +16,6 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-
-# set device port and baudrate
-SERIAL_DEVICE = '/dev/tty.usbmodemPy8088371'
-BAUDRATE = 115200
 
 # set table
 TABLE = 'geo'
