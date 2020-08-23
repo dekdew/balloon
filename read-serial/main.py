@@ -51,7 +51,7 @@ while True:
         print("\ndata: ", data, "\n-------------------------------------------------------------")
 
         # current date and time
-        timestamp = data["timestamp"]
+        timestamp = datetime.now()
 
         postgres_insert_query = """ INSERT INTO {} (device_id, lat, long, battery, timestamp, temp, pressure, humidity, altitude) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)""".format(
             TABLE)
